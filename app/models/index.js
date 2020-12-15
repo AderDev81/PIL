@@ -26,6 +26,7 @@ db.sequelize = sequelize;
 //initialiser les entités de la base de données 
 db.offres = require("./offre.model.js")(sequelize, Sequelize);
 db.typeoffres = require("./typeoffre.model.js")(sequelize, Sequelize);
+db.candidat = require("./candidat.model.js")(sequelize, Sequelize);
 
 //-------------------------------------------------------------------------------------
 // Relation entre les entités  
