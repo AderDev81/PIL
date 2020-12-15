@@ -30,6 +30,7 @@ app.get("/", (req, res) => {
 // Ajouter les routes d app
 require("./app/routes/offre.routes")(app);
 require("./app/routes/typeoffre.routes")(app);
+require("./app/routes/candidat.routes")(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
